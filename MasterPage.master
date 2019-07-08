@@ -1,0 +1,145 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="fa">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <link href="Content/slick/slick.css" rel="stylesheet" />
+    <link href="Content/slick/slick-theme.css" rel="stylesheet" />
+    <link href="Content/menu.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+
+        <nav id="navigation" class="navigation navigation-landscape">
+            <div class="nav-header">
+                <a href="/Home/Index" class="nav-brand">
+                    <img src="../Images/logo-b.png" class="logo" /></a>
+                <div class="nav-toggle"></div>
+            </div>
+            <div class="nav-menus-wrapper" style="transition-property: none;">
+                <ul class="nav-menu">
+                    <li class="active"><a href="/Home">صفحه اصلی</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div class="content-footer-a">
+            <h3>لیست آخرین قیمت ها</h3>
+            <ul class="slider">
+                <li>
+                    <ul>
+                        <li>ریال</li>
+                        <li>دلار</li>
+                        <li class="line"></li>
+                    </ul>
+                    <span>25.320</span>
+                </li>
+                <li>
+                    <ul>
+                        <li>ریال</li>
+                        <li>دلار</li>
+                        <li class="line"></li>
+                    </ul>
+                    <span>25.320</span>
+                </li>
+                <li>
+                    <ul>
+                        <li>ریال</li>
+                        <li>دلار</li>
+                        <li class="line color-a"></li>
+                    </ul>
+                    <span>25.320</span>
+                </li>
+                <li>
+                    <ul>
+                        <li>ریال</li>
+                        <li>دلار</li>
+                        <li class="line color-b"></li>
+                    </ul>
+                    <span>25.320</span>
+                </li>
+                <li>
+                    <ul>
+                        <li>ریال</li>
+                        <li>دلار</li>
+                        <li class="line color-a"></li>
+                    </ul>
+                    <span>25.320</span>
+                </li>
+                <li>
+                    <ul>
+                        <li>ریال</li>
+                        <li>دلار</li>
+                        <li class="line"></li>
+                    </ul>
+                    <span>25.320</span>
+                </li>
+            </ul>
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.rtl.min.js"></script>
+        <script src="Content/slick/slick.min.js"></script>
+        <script src="js/menu/menu.js"></script>
+        <script src="js/menu/menu-init.js"></script>
+        <script src="js/menu/common-function.js"></script>
+        <script src="js/menu/custom.js"></script>
+        <script>
+            $('.slider').slick({
+                dots: false,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                touchMove: false,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        </script>
+    </form>
+</body>
+</html>
