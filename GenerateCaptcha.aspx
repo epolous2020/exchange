@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="verificationpage.aspx.cs" Inherits="verificationpage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="GenerateCaptcha.aspx.cs" Inherits="GenerateCaptcha" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label runat="server" ID="message" Text=""></asp:Label>
         </div>
     </form>
 </body>

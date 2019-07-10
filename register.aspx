@@ -52,7 +52,7 @@
 
             <div class="col-md-12 margin-b15">
                 آیا قبلا عضو شده اید؟
-                <a href="login.aspx">ورود به سامانه</a>
+                <a href="default.aspx">ورود به سامانه</a>
             </div>
         </div>
     </div>

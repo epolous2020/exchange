@@ -7,16 +7,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %></title>
-
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap.rtl.min.css" rel="stylesheet" />
-    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
-    <link href="~/Content/main.css" rel="stylesheet" />
-    <link href="Content/slick/slick.css" rel="stylesheet" />
-    <link href="Content/slick/slick-theme.css" rel="stylesheet" />
-    <link href="Content/menu.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap.rtl.min.css" rel="stylesheet" />   
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/slick/slick.css" rel="stylesheet" />
+    <link href="css/slick/slick-theme.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -31,7 +29,7 @@
             </div>
             <div class="nav-menus-wrapper" style="transition-property: none;">
                 <ul class="nav-menu">
-                    <li class="active"><a href="/Home">صفحه اصلی</a></li>
+                    <li class="active"><a href="/">صفحه اصلی</a></li>
                     <li><a href="#">درباره ما</a></li>
                     <li><a href="#">تماس با ما</a></li>
                 </ul>
@@ -98,11 +96,8 @@
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap.rtl.min.js"></script>
-        <script src="Content/slick/slick.min.js"></script>
-        <script src="js/menu/menu.js"></script>
-        <script src="js/menu/menu-init.js"></script>
-        <script src="js/menu/common-function.js"></script>
-        <script src="js/menu/custom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/menu.js"></script>              
         <script>
             $('.slider').slick({
                 dots: false,
@@ -133,10 +128,7 @@
                             slidesToShow: 4,
                             slidesToScroll: 1
                         }
-                    }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
+                    }                    
                 ]
             });
         </script>
