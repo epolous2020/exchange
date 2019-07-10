@@ -31,13 +31,13 @@
                 <asp:TextBox runat="server" ID="password" placeholder="رمز عبور" TextMode="Password"></asp:TextBox>
             </div>
             <div class="col-md-6">
-                <asp:TextBox runat="server" ID="phone" placeholder="شماره تماس"></asp:TextBox>
+                <asp:TextBox runat="server" ID="repassword" placeholder="کلمه عبور مجدد" TextMode="Password"></asp:TextBox>
             </div>
         </div>
 
         <div class="col-md-12 margin-b15">
             <div class="col-md-6 margin-b15-sm">
-                <asp:TextBox runat="server" ID="repassword" placeholder="کلمه عبور مجدد" TextMode="Password"></asp:TextBox>
+                <asp:TextBox runat="server" ID="phone" placeholder="شماره تماس"></asp:TextBox>
             </div>
             <div class="col-md-6">
                 <asp:Button runat="server" ID="save_btn" OnClick="save_btn_Click" class="button-a btncolor-a" Text=" ثبت درخواست عضویت" />
